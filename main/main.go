@@ -23,8 +23,8 @@ import (
 	"github.com/GanymedeNil/rdb"
 	"github.com/elazarl/go-bindata-assetfs"
 	"github.com/julienschmidt/httprouter"
-	"github.com/xueqiu/rdr/static"
-    "github.com/xueqiu/rdr"
+	"github.com/GanymedeNil/rdr/static"
+    "github.com/GanymedeNil/rdr"
 )
 
 //go:generate go-bindata -prefix "static/" -o=static/static.go -pkg=static -ignore static.go static/...
