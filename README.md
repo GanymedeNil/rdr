@@ -44,9 +44,9 @@ USAGE:
    rdr keys FILE1 [FILE2] [FILE3]...
 ```
 
-[Linux amd64 Download](http://ohjx11q65.bkt.clouddn.com/rdr)
+[Linux amd64 Download](https://github.com/GanymedeNil/rdr/releases)
 
-[OSX Download](http://ohjw7fr2u.bkt.clouddn.com/rdr)
+[OSX Download](https://github.com/GanymedeNil/rdr/releases)
 
 After downloading meybe need add permisson to execute.
 ```
