@@ -4168,7 +4168,7 @@ var prototypeMax = deprecate(
     }
 );
 
-// Pick a moment m from moments so that m[fn](other) is true for all
+// Pick a moment main from moments so that main[fn](other) is true for all
 // other. This relies on the function fn to be transitive.
 //
 // moments should either be an array of moment objects or an array, whose

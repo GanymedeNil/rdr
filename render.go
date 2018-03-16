@@ -12,31 +12,31 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package main
+package rdr
 
 import (
 	"net/http"
-
 	"github.com/julienschmidt/httprouter"
 )
+var Counters = NewSafeMap()
 
-func index(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
-	for key := range counters.Items() {
+func Index(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
+	for key := range Counters.Items() {
 		http.Redirect(w, r, "/instance/"+key.(string), http.StatusFound)
 		return
 	}
 }
 
-func rdbReveal(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
-	// deep copy  tplCommonData into data
+func RdbReveal(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
+	// deep copy  TplCommonData into data
 	data := map[string]interface{}{}
-	for key, val := range tplCommonData {
+	for key, val := range TplCommonData {
 		data[key] = val
 	}
 
 	path := p.ByName("path")
 
-	c := counters.Get(path)
+	c := Counters.Get(path)
 	if c == nil {
 		return
 	}

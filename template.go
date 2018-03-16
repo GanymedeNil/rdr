@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package main
+package rdr
 
 import (
 	"bytes"
@@ -29,12 +29,12 @@ import (
 
 var (
 	tmpl          *template.Template
-	tplCommonData = map[string]interface{}{}
+	TplCommonData = map[string]interface{}{}
 	tplFuncMap    = make(template.FuncMap)
 	isFirst       = true
 )
 
-func initHTMLTmpl() {
+func InitHTMLTmpl() {
 	// init function maps
 	tplFuncMap["isFirst"] = func() bool { res := isFirst; isFirst = false; return res }
 	tplFuncMap["clearFirst"] = func() bool { isFirst = true; return isFirst }

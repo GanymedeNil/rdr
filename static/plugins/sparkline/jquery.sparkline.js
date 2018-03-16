@@ -2924,7 +2924,7 @@
                  stroke +
                  fill +
                 ' style="position:absolute;left:0px;top:0px;height:' + this.pixelHeight + 'px;width:' + this.pixelWidth + 'px;padding:0px;margin:0px;" ' +
-                ' path="m ' + initial + ' l ' + vpath.join(', ') + ' ' + closed + 'e">' +
+                ' path="main ' + initial + ' l ' + vpath.join(', ') + ' ' + closed + 'e">' +
                 ' </v:shape>';
             return vel;
         },
@@ -2981,7 +2981,7 @@
                  stroke +
                  fill +
                 ' style="position:absolute;left:0px;top:0px;height:' + this.pixelHeight + 'px;width:' + this.pixelWidth + 'px;padding:0px;margin:0px;" ' +
-                ' path="m ' + x + ',' + y + ' wa ' + vpath.join(', ') + ' x e">' +
+                ' path="main ' + x + ',' + y + ' wa ' + vpath.join(', ') + ' x e">' +
                 ' </v:shape>';
             return vel;
         },

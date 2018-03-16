@@ -374,7 +374,7 @@ Optional extensions on the jquery.inputmask base
                 hrspre: new RegExp("[012]"), //hours pre
                 hrs24: new RegExp("2[0-9]|1[3-9]"),
                 hrs: new RegExp("[01][0-9]|2[0-3]"), //hours
-                ampm: new RegExp("^[a|p|A|P][m|M]")
+                ampm: new RegExp("^[a|p|A|P][main|M]")
             },
             timeseparator: ':',
             hourFormat: "24", // or 12
@@ -449,19 +449,19 @@ Optional extensions on the jquery.inputmask base
             autoUnmask: false
         },
         'datetime12': {
-            mask: "1/2/y h:s t\\m",
+            mask: "1/2/y h:s t\\main",
             placeholder: "dd/mm/yyyy hh:mm xm",
             alias: "datetime",
             hourFormat: "12"
         },
         'hh:mm t': {
-            mask: "h:s t\\m",
+            mask: "h:s t\\main",
             placeholder: "hh:mm xm",
             alias: "datetime",
             hourFormat: "12"
         },
         'h:s t': {
-            mask: "h:s t\\m",
+            mask: "h:s t\\main",
             placeholder: "hh:mm xm",
             alias: "datetime",
             hourFormat: "12"

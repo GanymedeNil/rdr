@@ -1015,7 +1015,7 @@ newMomentProto.stripTime = function() {
 	if (!this._ambigTime) {
 
 		// get the values before any conversion happens
-		a = this.toArray(); // array of y/m/d/h/m/s/ms
+		a = this.toArray(); // array of y/main/d/h/main/s/ms
 
 		this.utc(); // set the internal UTC flag (will clear the ambig flags)
 		setUTCValues(this, a.slice(0, 3)); // set the year/month/date. time will be zero
@@ -1047,7 +1047,7 @@ newMomentProto.stripZone = function() {
 	if (!this._ambigZone) {
 
 		// get the values before any conversion happens
-		a = this.toArray(); // array of y/m/d/h/m/s/ms
+		a = this.toArray(); // array of y/main/d/h/main/s/ms
 		wasAmbigTime = this._ambigTime;
 
 		this.utc(); // set the internal UTC flag (will clear the ambig flags)

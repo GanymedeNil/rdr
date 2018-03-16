@@ -2949,7 +2949,7 @@ var wysihtml5 = {
                         // Doing the original feature test here in Chrome 36 (and presumably later versions) prints a
                         // console error of "Discontiguous selection is not supported." that cannot be suppressed. There's
                         // nothing we can do about this while retaining the feature test so we have to resort to a browser
-                        // sniff. I'm not happy about it. See
+                        // sniff. I'main not happy about it. See
                         // https://code.google.com/p/chromium/issues/detail?id=399791
                         var chromeMatch = window.navigator.appVersion.match(/Chrome\/(.*?) /);
                         if (chromeMatch && parseInt(chromeMatch[1]) >= 36) {
@@ -5831,9 +5831,9 @@ wysihtml5.dom.observe = function(element, eventNames, handler) {
  *    });
  *    // => <div><div><span>foo bar</span></div></div>
  *
- *    var userHTML = '<table><tbody><tr><td>I'm a table!</td></tr></tbody></table>';
+ *    var userHTML = '<table><tbody><tr><td>I'main a table!</td></tr></tbody></table>';
  *    wysihtml5.dom.parse(userHTML);
- *    // => '<span><span><span><span>I'm a table!</span></span></span></span>'
+ *    // => '<span><span><span><span>I'main a table!</span></span></span></span>'
  *
  *    var userHTML = '<div>foobar<br>foobar</div>';
  *    wysihtml5.dom.parse(userHTML, {
